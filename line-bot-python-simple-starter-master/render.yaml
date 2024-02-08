@@ -4,7 +4,7 @@ services:
   env: python
   repo: https://github.com/starystary9/animate_line_bot
   buildCommand: cd examples/flask-echo;pip install gunicorn -r line-bot-python-simple-starter-master/requirements.txt
-  startCommand: cd examples/flask-echo;gunicorn app:app
+  startCommand: cd examples/flask-echo;gunicorn app:line-bot-python-simple-starter-master/app.py
   plan: free
   autoDeploy: false
   envVars:
